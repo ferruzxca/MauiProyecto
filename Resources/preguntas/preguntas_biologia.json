@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Cuál es la unidad básica de la vida?",
+    "opciones": [ "Átomo", "Célula", "Tejido" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué proceso produce oxígeno en las plantas?",
+    "opciones": [ "Respiración", "Fotosíntesis", "Digestión" ],
+    "respuesta_correcta": 1
+  }
+]

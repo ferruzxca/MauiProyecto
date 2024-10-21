@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Cuál es el elemento químico más abundante en el universo?",
+    "opciones": [ "Hidrógeno", "Oxígeno", "Carbono" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es el número atómico?",
+    "opciones": [ "Número de protones en el núcleo", "Número de electrones en el átomo", "Masa del átomo" ],
+    "respuesta_correcta": 0
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Cuál es el río más largo del mundo?",
+    "opciones": [ "Nilo", "Amazonas", "Yangtsé" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿En qué continente se encuentra el desierto del Sahara?",
+    "opciones": [ "Asia", "África", "Australia" ],
+    "respuesta_correcta": 1
+  }
+]

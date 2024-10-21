@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Cuál es el resultado de 2 + 2?",
+    "opciones": [ "3", "4", "5" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es el valor de pi?",
+    "opciones": [ "3.1416", "2.7182", "1.6180" ],
+    "respuesta_correcta": 0
+  }
+]

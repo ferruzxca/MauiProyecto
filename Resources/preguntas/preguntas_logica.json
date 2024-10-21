@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "Si Juan tiene 5 manzanas y regala 2, ¿cuántas le quedan?",
+    "opciones": [ "3", "4", "2" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "Si A es mayor que B, y B es mayor que C, ¿cuál es verdadero?",
+    "opciones": [ "A es menor que C", "A es mayor que C", "B es mayor que A" ],
+    "respuesta_correcta": 1
+  }
+]

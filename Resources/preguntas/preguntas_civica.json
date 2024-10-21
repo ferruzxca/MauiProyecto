@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Qué es la democracia?",
+    "opciones": [ "Gobierno del pueblo", "Monarquía", "Dictadura" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es un derecho humano?",
+    "opciones": [ "Un privilegio", "Un deber", "Una garantía básica para todas las personas" ],
+    "respuesta_correcta": 2
+  }
+]

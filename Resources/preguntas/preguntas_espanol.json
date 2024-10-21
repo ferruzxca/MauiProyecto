@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Cuál es el sinónimo de rápido?",
+    "opciones": [ "Lento", "Veloz", "Pequeño" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué significa arduo?",
+    "opciones": [ "Fácil", "Difícil", "Rápido" ],
+    "respuesta_correcta": 1
+  }
+]

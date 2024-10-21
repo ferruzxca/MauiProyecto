@@ -1,0 +1,34 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProyecto.MainPage"
+             Title="Login">
+
+    <StackLayout Padding="20">
+        <!-- Campo de Usuario -->
+        <Label Text="Usuario" />
+        <Entry x:Name="UsernameEntry" Placeholder="Ingrese su usuario" />
+
+        <!-- Campo de Contraseña -->
+        <Label Text="Contraseña" />
+        <Entry x:Name="PasswordEntry" Placeholder="Ingrese su contraseña" IsPassword="True" />
+
+        <!-- Radio Buttons: Individualmente seleccionables con validación individual -->
+        <Label Text="Seleccione las opciones obligatorias:" FontAttributes="Bold" />
+
+        <!-- Grupo 1: Términos y condiciones -->
+        <StackLayout>
+            <RadioButton x:Name="TermsAcceptedRadio" Content="Acepto las condiciones de la aplicación" GroupName="TermsGroup" />
+            <RadioButton x:Name="TermsRejectedRadio" Content="No acepto las condiciones de la aplicación" GroupName="TermsGroup" />
+        </StackLayout>
+
+        <!-- Grupo 2: Mayoría de edad -->
+        <StackLayout>
+            <RadioButton x:Name="AgeAcceptedRadio" Content="Soy mayor de edad" GroupName="AgeGroup" />
+            <RadioButton x:Name="AgeRejectedRadio" Content="No soy mayor de edad" GroupName="AgeGroup" />
+        </StackLayout>
+
+        <!-- Botón de Login -->
+        <Button Text="Ingresar" Clicked="OnLoginClicked" />
+    </StackLayout>
+</ContentPage>
+

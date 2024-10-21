@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Qué significa CPU?",
+    "opciones": [ "Central Processing Unit", "Computer Power Unit", "Central Power Unit" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál es el lenguaje de programación más usado para desarrollo web?",
+    "opciones": [ "Python", "JavaScript", "C++" ],
+    "respuesta_correcta": 1
+  }
+]

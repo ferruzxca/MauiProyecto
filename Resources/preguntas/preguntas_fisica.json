@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Qué es la fuerza?",
+    "opciones": [ "Una energía", "Un cambio de velocidad", "Una interacción que cambia el movimiento" ],
+    "respuesta_correcta": 2
+  },
+  {
+    "pregunta": "¿Cuál es la fórmula para calcular la energía cinética?",
+    "opciones": [ "mv^2", "1/2 mv^2", "mg" ],
+    "respuesta_correcta": 1
+  }
+]

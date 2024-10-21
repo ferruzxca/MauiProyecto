@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiProyecto.QuimicaPage"
+             Title="QuimicaPage">
+    
+    <StackLayout Padding="20" Spacing="15">
+
+        <!-- Pregunta -->
+        <Label x:Name="PreguntaLabel" 
+               FontAttributes="Bold"
+               FontSize="18"
+               TextColor="Black"
+               HorizontalOptions="CenterAndExpand" />
+
+        <!-- Opción 1 -->
+        <RadioButton x:Name="Opcion1"
+                     FontSize="16"
+                     Value="0" 
+                     GroupName="opciones" />
+
+        <!-- Opción 2 -->
+        <RadioButton x:Name="Opcion2"
+                     FontSize="16"
+                     Value="1" 
+                     GroupName="opciones" />
+
+        <!-- Opción 3 -->
+        <RadioButton x:Name="Opcion3"
+                     FontSize="16"
+                     Value="2" 
+                     GroupName="opciones" />
+
+        <!-- Botón para validar respuesta -->
+        <Button Text="Validar" 
+                FontAttributes="Bold" 
+                FontSize="16" 
+                BackgroundColor="LightBlue"
+                TextColor="White"
+                Clicked="OnValidateClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="EndAndExpand" />
+
+    </StackLayout>
+</ContentPage>

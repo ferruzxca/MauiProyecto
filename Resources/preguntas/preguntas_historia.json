@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿En qué año comenzó la Primera Guerra Mundial?",
+    "opciones": [ "1912", "1914", "1916" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Quién fue el primer presidente de los Estados Unidos?",
+    "opciones": [ "Thomas Jefferson", "George Washington", "Abraham Lincoln" ],
+    "respuesta_correcta": 1
+  }
+]
