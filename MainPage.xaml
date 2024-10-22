@@ -82,7 +82,6 @@
                     HorizontalOptions="Center"
                     VerticalOptions="End"
                     Clicked="OnLoginClicked" />
-
         </StackLayout>
     </ScrollView>
 </ContentPage>
