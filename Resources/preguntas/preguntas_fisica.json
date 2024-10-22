@@ -1,12 +1,62 @@
 [
   {
-    "pregunta": "¿Qué es la fuerza?",
-    "opciones": [ "Una energía", "Un cambio de velocidad", "Una interacción que cambia el movimiento" ],
-    "respuesta_correcta": 2
+    "pregunta": "¿Cuál es la unidad de medida de la fuerza en el Sistema Internacional?",
+    "opciones": [ "Newton", "Joule", "Watt" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es la velocidad?",
+    "opciones": [ "La distancia recorrida en un tiempo determinado", "La fuerza aplicada sobre un objeto", "La aceleración de un objeto" ],
+    "respuesta_correcta": 0
   },
   {
     "pregunta": "¿Cuál es la fórmula para calcular la energía cinética?",
-    "opciones": [ "mv^2", "1/2 mv^2", "mg" ],
+    "opciones": [ "E = m * v", "E = m * g", "E = 1/2 * m * v^2" ],
+    "respuesta_correcta": 2
+  },
+  {
+    "pregunta": "¿Qué ley de Newton explica la inercia de los cuerpos?",
+    "opciones": [ "Primera ley", "Segunda ley", "Tercera ley" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es la aceleración?",
+    "opciones": [ "Cambio de velocidad respecto al tiempo", "Fuerza aplicada en una dirección", "Energía transferida a un objeto" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una forma de energía potencial?",
+    "opciones": [ "Cinética", "Térmica", "Gravitacional" ],
+    "respuesta_correcta": 2
+  },
+  {
+    "pregunta": "¿Qué es la ley de la conservación de la energía?",
+    "opciones": [ "La energía no puede ser creada ni destruida, solo transformada", "La energía puede ser destruida pero no creada", "La energía solo puede aumentar en un sistema" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es el trabajo mecánico en física?",
+    "opciones": [ "La cantidad de energía transferida por una fuerza", "La velocidad con la que se mueve un objeto", "La masa multiplicada por la aceleración" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál es la unidad de medida de la energía en el Sistema Internacional?",
+    "opciones": [ "Joule", "Newton", "Watt" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué tipo de onda no necesita un medio material para propagarse?",
+    "opciones": [ "Onda mecánica", "Onda sonora", "Onda electromagnética" ],
+    "respuesta_correcta": 2
+  },
+  {
+    "pregunta": "¿Qué es la frecuencia de una onda?",
+    "opciones": [ "La distancia entre dos crestas consecutivas", "El número de oscilaciones por segundo", "La velocidad con la que viaja una onda" ],
     "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es la fórmula de la Ley de Ohm?",
+    "opciones": [ "V = I * R", "F = m * a", "P = m / v" ],
+    "respuesta_correcta": 0
   }
 ]

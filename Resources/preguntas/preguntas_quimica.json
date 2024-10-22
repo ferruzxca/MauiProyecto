@@ -1,12 +1,64 @@
 [
   {
-    "pregunta": "¿Cuál es el elemento químico más abundante en el universo?",
-    "opciones": [ "Hidrógeno", "Oxígeno", "Carbono" ],
+    "pregunta": "¿Cuál es el elemento químico más abundante en la atmósfera de la Tierra?",
+    "opciones": [ "Oxígeno", "Nitrógeno", "Dióxido de carbono" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es un átomo?",
+    "opciones": [ "La unidad básica de un compuesto", "La partícula más pequeña de un elemento que conserva sus propiedades", "Una molécula formada por varios elementos" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es la fórmula química del agua?",
+    "opciones": [ "H2O", "CO2", "NaCl" ],
     "respuesta_correcta": 0
   },
   {
-    "pregunta": "¿Qué es el número atómico?",
-    "opciones": [ "Número de protones en el núcleo", "Número de electrones en el átomo", "Masa del átomo" ],
+    "pregunta": "¿Qué mide el pH?",
+    "opciones": [ "La cantidad de agua en una solución", "La concentración de iones de hidrógeno en una solución", "La cantidad de soluto disuelto en un solvente" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué tipo de enlace se forma cuando dos átomos comparten electrones?",
+    "opciones": [ "Enlace iónico", "Enlace covalente", "Enlace metálico" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué tipo de reacción es la combustión?",
+    "opciones": [ "Reacción endotérmica", "Reacción redox", "Reacción de descomposición" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es la ley de conservación de la masa?",
+    "opciones": [ "La masa no puede ser creada ni destruida en una reacción química", "La masa siempre se duplica en una reacción química", "La masa puede aumentar en una reacción química" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué elemento tiene el símbolo químico 'Fe'?",
+    "opciones": [ "Fósforo", "Hierro", "Flúor" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es un catión?",
+    "opciones": [ "Un ion con carga positiva", "Un ion con carga negativa", "Un átomo neutro" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál es el número atómico del oxígeno?",
+    "opciones": [ "6", "8", "12" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un ácido fuerte?",
+    "opciones": [ "Ácido acético", "Ácido sulfúrico", "Ácido cítrico" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es una reacción de neutralización?",
+    "opciones": [ "Una reacción entre un ácido y una base", "Una reacción de combustión", "Una reacción que produce dióxido de carbono" ],
     "respuesta_correcta": 0
   }
+]
+
 ]

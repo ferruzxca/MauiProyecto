@@ -1,12 +1,63 @@
 [
   {
     "pregunta": "¿En qué año comenzó la Primera Guerra Mundial?",
-    "opciones": [ "1912", "1914", "1916" ],
-    "respuesta_correcta": 1
+    "opciones": [ "1914", "1918", "1939" ],
+    "respuesta_correcta": 0
   },
   {
     "pregunta": "¿Quién fue el primer presidente de los Estados Unidos?",
-    "opciones": [ "Thomas Jefferson", "George Washington", "Abraham Lincoln" ],
+    "opciones": [ "Abraham Lincoln", "Thomas Jefferson", "George Washington" ],
+    "respuesta_correcta": 2
+  },
+  {
+    "pregunta": "¿En qué año Cristóbal Colón llegó a América?",
+    "opciones": [ "1492", "1500", "1453" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué civilización construyó las pirámides de Giza?",
+    "opciones": [ "Los mayas", "Los egipcios", "Los griegos" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué evento inició la Segunda Guerra Mundial?",
+    "opciones": [ "El ataque a Pearl Harbor", "La invasión de Polonia por Alemania", "La Revolución Rusa" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué imperio gobernó gran parte de Europa antes de su caída en 476 d.C.?",
+    "opciones": [ "El Imperio Bizantino", "El Imperio Romano", "El Imperio Otomano" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Quién fue el líder del Tercer Reich durante la Segunda Guerra Mundial?",
+    "opciones": [ "Josef Stalin", "Adolf Hitler", "Benito Mussolini" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué revolucionario lideró la independencia de cinco países en América del Sur?",
+    "opciones": [ "José de San Martín", "Simón Bolívar", "Miguel Hidalgo" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál fue la primera civilización en desarrollar la escritura cuneiforme?",
+    "opciones": [ "Los egipcios", "Los sumerios", "Los persas" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿En qué año cayó el Muro de Berlín?",
+    "opciones": [ "1961", "1989", "1991" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué líder militar fue conocido como 'El Corso' y se convirtió en emperador de Francia?",
+    "opciones": [ "Napoleón Bonaparte", "Luis XIV", "Carlomagno" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué país fue el primero en enviar un ser humano al espacio?",
+    "opciones": [ "Estados Unidos", "Rusia", "China" ],
     "respuesta_correcta": 1
   }
 ]
+

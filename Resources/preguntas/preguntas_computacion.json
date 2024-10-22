@@ -1,12 +1,63 @@
 [
   {
-    "pregunta": "¿Qué significa CPU?",
-    "opciones": [ "Central Processing Unit", "Computer Power Unit", "Central Power Unit" ],
+    "pregunta": "¿Qué es un algoritmo?",
+    "opciones": [ "Un lenguaje de programación", "Una secuencia de pasos para resolver un problema", "Una base de datos" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué significa CPU en el contexto de una computadora?",
+    "opciones": [ "Central Processing Unit", "Computer Personal Unit", "Core Programming Unit" ],
     "respuesta_correcta": 0
   },
   {
-    "pregunta": "¿Cuál es el lenguaje de programación más usado para desarrollo web?",
-    "opciones": [ "Python", "JavaScript", "C++" ],
+    "pregunta": "¿Qué es un sistema operativo?",
+    "opciones": [ "Un software que gestiona los recursos de la computadora", "Un componente físico de la computadora", "Un programa antivirus" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un lenguaje de programación?",
+    "opciones": [ "Python", "HTML", "Wi-Fi" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué función tiene la RAM en una computadora?",
+    "opciones": [ "Almacenar datos de manera permanente", "Ejecutar programas y almacenar datos temporalmente", "Controlar el hardware de la computadora" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es una red informática?",
+    "opciones": [ "Un conjunto de computadoras conectadas entre sí para compartir recursos", "Una computadora portátil", "Un programa de edición de imágenes" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es la nube (cloud) en informática?",
+    "opciones": [ "Un disco duro externo", "Un servicio de almacenamiento y acceso a datos a través de internet", "Un programa para editar archivos" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es la principal función de un navegador web?",
+    "opciones": [ "Proteger la computadora de virus", "Permitir a los usuarios acceder a páginas web", "Ejecutar programas locales" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué significa HTML?",
+    "opciones": [ "HyperText Markup Language", "HighText Machine Language", "Home Tool Markup Language" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es un archivo ejecutable?",
+    "opciones": [ "Un archivo de texto", "Un archivo que contiene instrucciones para que un programa se ejecute", "Un archivo de música" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es una dirección IP?",
+    "opciones": [ "Un identificador único para cada dispositivo en una red", "Un tipo de archivo comprimido", "Un protocolo de transferencia de archivos" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es un firewall?",
+    "opciones": [ "Un dispositivo de almacenamiento", "Una barrera de seguridad para proteger una red o computadora de accesos no autorizados", "Un software para edición de videos" ],
     "respuesta_correcta": 1
   }
 ]
+

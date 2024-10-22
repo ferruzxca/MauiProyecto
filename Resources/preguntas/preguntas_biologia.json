@@ -8,5 +8,56 @@
     "pregunta": "¿Qué proceso produce oxígeno en las plantas?",
     "opciones": [ "Respiración", "Fotosíntesis", "Digestión" ],
     "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es el principal componente de los cromosomas?",
+    "opciones": [ "ADN", "ARN", "Proteínas" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Cómo se llama el proceso por el cual las células se dividen?",
+    "opciones": [ "Mitosis", "Meiosis", "Fusión" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué estructura dentro de la célula contiene el ADN?",
+    "opciones": [ "Núcleo", "Citoplasma", "Membrana celular" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué molécula es necesaria para la fotosíntesis?",
+    "opciones": [ "Glucosa", "Clorofila", "Oxígeno" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es el tipo de célula que no tiene núcleo definido?",
+    "opciones": [ "Eucariota", "Procariota", "Multicelular" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué tipo de organismo es una bacteria?",
+    "opciones": [ "Eucariota", "Procariota", "Fungi" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cómo se llama el proceso en el que el agua se mueve a través de una membrana semipermeable?",
+    "opciones": [ "Ósmosis", "Difusión", "Transpiración" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué tipo de biomolécula son las enzimas?",
+    "opciones": [ "Carbohidratos", "Proteínas", "Lípidos" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es la función de los ribosomas en la célula?",
+    "opciones": [ "Producción de proteínas", "Producción de energía", "Almacenamiento de información genética" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué sistema del cuerpo humano es responsable de la defensa contra patógenos?",
+    "opciones": [ "Sistema circulatorio", "Sistema inmunológico", "Sistema digestivo" ],
+    "respuesta_correcta": 1
   }
 ]
+

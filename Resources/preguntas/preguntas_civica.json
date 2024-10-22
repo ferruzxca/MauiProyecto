@@ -1,12 +1,62 @@
 [
   {
-    "pregunta": "¿Qué es la democracia?",
-    "opciones": [ "Gobierno del pueblo", "Monarquía", "Dictadura" ],
+    "pregunta": "¿Qué es la ética?",
+    "opciones": [ "El estudio de las emociones", "El estudio de los valores y conductas correctas", "El estudio de las leyes" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es un valor cívico?",
+    "opciones": [ "Una actitud egoísta", "Una norma legal", "Un principio que guía el comportamiento en la sociedad" ],
+    "respuesta_correcta": 2
+  },
+  {
+    "pregunta": "¿Cuál es un valor importante en una democracia?",
+    "opciones": [ "Autoritarismo", "Respeto", "Imposición" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué representa la justicia en la sociedad?",
+    "opciones": [ "La venganza", "El equilibrio en la aplicación de las leyes", "El uso de la fuerza" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es la tolerancia?",
+    "opciones": [ "Aceptar la diversidad y las diferencias de opinión", "Ignorar los conflictos", "Evitar el diálogo" ],
     "respuesta_correcta": 0
   },
   {
+    "pregunta": "¿Qué es la responsabilidad?",
+    "opciones": [ "Delegar nuestras acciones a otros", "Asumir las consecuencias de nuestras acciones", "Evitar las obligaciones" ],
+    "respuesta_correcta": 1
+  },
+  {
     "pregunta": "¿Qué es un derecho humano?",
-    "opciones": [ "Un privilegio", "Un deber", "Una garantía básica para todas las personas" ],
-    "respuesta_correcta": 2
+    "opciones": [ "Un privilegio otorgado por la ley", "Una facultad inherente a todos los seres humanos", "Un beneficio exclusivo de ciertas personas" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es la igualdad de género?",
+    "opciones": [ "Reconocer que un género es superior a otro", "Tratar a todas las personas sin importar su género de manera justa", "Ignorar las diferencias de género" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es el respeto a la diversidad cultural?",
+    "opciones": [ "Ignorar las costumbres de otras culturas", "Valorar y aceptar las diferentes culturas", "Imponer una cultura sobre las demás" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es el bien común?",
+    "opciones": [ "El beneficio personal de unos pocos", "El bienestar de toda la comunidad", "El enriquecimiento individual" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo de la educación cívica?",
+    "opciones": [ "Formar ciudadanos conscientes y participativos", "Controlar a la población", "Reprimir las opiniones" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es la solidaridad?",
+    "opciones": [ "Apoyar a otros en situaciones difíciles", "Competir por recursos", "Evitar ayudar a los demás" ],
+    "respuesta_correcta": 0
   }
 ]

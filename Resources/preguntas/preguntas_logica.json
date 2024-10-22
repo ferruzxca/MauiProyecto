@@ -1,12 +1,62 @@
 [
   {
-    "pregunta": "Si Juan tiene 5 manzanas y regala 2, ¿cuántas le quedan?",
-    "opciones": [ "3", "4", "2" ],
+    "pregunta": "¿Qué es una premisa en lógica?",
+    "opciones": [ "Una afirmación que apoya una conclusión", "Una pregunta que necesita ser respondida", "Una inferencia que se sigue de un argumento" ],
     "respuesta_correcta": 0
   },
   {
-    "pregunta": "Si A es mayor que B, y B es mayor que C, ¿cuál es verdadero?",
-    "opciones": [ "A es menor que C", "A es mayor que C", "B es mayor que A" ],
+    "pregunta": "¿Cuál es el propósito de un argumento lógico?",
+    "opciones": [ "Confundir al oyente", "Apoyar una conclusión con razones", "Hacer una declaración sin justificación" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es un silogismo?",
+    "opciones": [ "Un tipo de falacia", "Un argumento deductivo con dos premisas y una conclusión", "Una afirmación sin sentido" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un ejemplo de falacia lógica?",
+    "opciones": [ "Argumento circular", "Modus ponens", "Entimema" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es una conclusión en lógica?",
+    "opciones": [ "Un hecho probado", "La afirmación derivada de las premisas", "Una afirmación sin relevancia" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "En un argumento válido, ¿qué ocurre si las premisas son verdaderas?",
+    "opciones": [ "La conclusión debe ser falsa", "La conclusión debe ser verdadera", "No se puede determinar la verdad de la conclusión" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es una falacia lógica?",
+    "opciones": [ "Un argumento correcto", "Un error en el razonamiento", "Una conclusión válida" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué significa 'Modus Ponens' en lógica?",
+    "opciones": [ "Afirmar el consecuente", "Negar el antecedente", "Si P, entonces Q; P es verdadero, por lo tanto Q es verdadero" ],
+    "respuesta_correcta": 2
+  },
+  {
+    "pregunta": "¿Qué es un argumento deductivo?",
+    "opciones": [ "Un argumento donde la conclusión sigue necesariamente de las premisas", "Un argumento donde las premisas apoyan probablemente la conclusión", "Un argumento basado en hechos empíricos" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es un argumento inductivo?",
+    "opciones": [ "Un argumento que utiliza reglas de inferencia", "Un argumento que generaliza a partir de casos particulares", "Un argumento en el que las premisas y la conclusión no están relacionadas" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un argumento válido?",
+    "opciones": [ "Todos los mamíferos son perros. Todos los perros son animales. Por lo tanto, todos los mamíferos son animales.", "Todos los mamíferos son animales. Todos los perros son mamíferos. Por lo tanto, todos los perros son animales.", "Algunas aves vuelan. Todos los pájaros vuelan. Por lo tanto, algunas aves no vuelan." ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué significa una contradicción en lógica?",
+    "opciones": [ "Una afirmación verdadera en todo contexto", "Una combinación de premisas que no pueden ser verdaderas al mismo tiempo", "Una afirmación que carece de conclusión" ],
     "respuesta_correcta": 1
   }
 ]

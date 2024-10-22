@@ -1,12 +1,62 @@
 [
   {
-    "pregunta": "¿Cuál es el resultado de 2 + 2?",
-    "opciones": [ "3", "4", "5" ],
+    "pregunta": "¿Cuál es el valor de π (pi) con dos decimales?",
+    "opciones": [ "3.12", "3.14", "3.16" ],
     "respuesta_correcta": 1
   },
   {
-    "pregunta": "¿Cuál es el valor de pi?",
-    "opciones": [ "3.1416", "2.7182", "1.6180" ],
+    "pregunta": "¿Cuál es la fórmula del área de un círculo?",
+    "opciones": [ "πr^2", "2πr", "r^2 + π" ],
     "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál es el resultado de 7 × 8?",
+    "opciones": [ "54", "56", "58" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cómo se llama un polígono con 8 lados?",
+    "opciones": [ "Heptágono", "Octágono", "Decágono" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es un número primo?",
+    "opciones": [ "Un número divisible solo por 1 y por sí mismo", "Un número que tiene más de dos divisores", "Un número divisible por 2" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál es la derivada de x^2?",
+    "opciones": [ "x", "2x", "x^2" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es el resultado de 9^2?",
+    "opciones": [ "81", "18", "72" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué es el perímetro de una figura?",
+    "opciones": [ "El espacio dentro de la figura", "La distancia alrededor de la figura", "La altura de la figura" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es la fórmula del teorema de Pitágoras?",
+    "opciones": [ "a^2 + b^2 = c", "a + b = c", "a^2 + b^2 = c^2" ],
+    "respuesta_correcta": 2
+  },
+  {
+    "pregunta": "¿Cuánto es 12 ÷ 3?",
+    "opciones": [ "4", "3", "5" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál es la pendiente de una línea horizontal?",
+    "opciones": [ "1", "0", "Infinito" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cómo se llama el resultado de una multiplicación?",
+    "opciones": [ "Cociente", "Producto", "Suma" ],
+    "respuesta_correcta": 1
   }
 ]
