@@ -16,8 +16,8 @@
                    HorizontalOptions="Center" />
 
             <!-- Imagen debajo del título -->
-            <Image Source="login_image.png"
-                   HeightRequest="150"
+            <Image Source="bebe.JPG"
+                   HeightRequest="300"
                    HorizontalOptions="Center" />
 
             <!-- Campo de Usuario -->

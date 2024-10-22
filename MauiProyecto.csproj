@@ -57,6 +57,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\bebe.JPG" />
 	  <None Remove="Resources\preguntas\preguntas_biologia.json" />
 	  <None Remove="Resources\preguntas\preguntas_civica.json" />
 	  <None Remove="Resources\preguntas\preguntas_computacion.json" />
