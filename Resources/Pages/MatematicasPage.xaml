@@ -1,44 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiProyecto.MatematicasPage"
-             Title="Matemáticas">
-    
-    <StackLayout Padding="20" Spacing="15">
+             Title="Matemáticas"
+             BackgroundColor="#F0F4F8">
+
+    <Grid Padding="20" RowSpacing="20" ColumnSpacing="0">
+
+        <!-- Título de la página -->
+        <Label Text="Cuestionario de Matemáticas"
+               Grid.Row="0"
+               FontAttributes="Bold"
+               FontSize="24"
+               TextColor="#2E86C1"
+               HorizontalOptions="Center"
+               VerticalOptions="Start" />
 
         <!-- Pregunta -->
-        <Label x:Name="PreguntaLabel" 
-               FontAttributes="Bold"
-               FontSize="18"
-               TextColor="Black"
-               HorizontalOptions="CenterAndExpand" />
+        <Frame Grid.Row="1"
+            Padding="15"
+            BackgroundColor="#E3F2FD"
+            CornerRadius="10"
+            HasShadow="True"
+            BorderColor="#64B5F6"
+            VerticalOptions="Start">
+            <Label x:Name="PreguntaLabel"
+                FontAttributes="Bold"
+                FontSize="18"
+                TextColor="Black"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center" />
+        </Frame>
 
-        <!-- Opción 1 -->
-        <RadioButton x:Name="Opcion1"
-                     FontSize="16"
-                     Value="0" 
-                     GroupName="opciones" />
+        <!-- Opciones de respuesta (radio buttons) -->
+        <StackLayout Grid.Row="2"
+                     Spacing="10"
+                     Padding="15"
+                     VerticalOptions="CenterAndExpand">
 
-        <!-- Opción 2 -->
-        <RadioButton x:Name="Opcion2"
-                     FontSize="16"
-                     Value="1" 
-                     GroupName="opciones" />
+            <!-- Opción 1 -->
+            <RadioButton x:Name="Opcion1"
+                         FontSize="16"
+                         Content="Opción 1"
+                         BackgroundColor="#F9FBE7"
+                         TextColor="Black"
+                         BorderWidth="2"
+                         Value="0"
+                         GroupName="opciones"
+                         HorizontalOptions="Start"
+                         Padding="10,5"
+                         CornerRadius="15"
+                         VerticalOptions="Center" />
 
-        <!-- Opción 3 -->
-        <RadioButton x:Name="Opcion3"
-                     FontSize="16"
-                     Value="2" 
-                     GroupName="opciones" />
+            <!-- Opción 2 -->
+            <RadioButton x:Name="Opcion2"
+                         FontSize="16"
+                         Content="Opción 2"
+                         BackgroundColor="#F9FBE7"
+                         TextColor="Black"
+                         BorderWidth="2"
+                         Value="1"
+                         GroupName="opciones"
+                         HorizontalOptions="Start"
+                         Padding="10,5"
+                         CornerRadius="15"
+                         VerticalOptions="Center" />
+
+            <!-- Opción 3 -->
+            <RadioButton x:Name="Opcion3"
+                         FontSize="16"
+                         Content="Opción 3"
+                         BackgroundColor="#F9FBE7"
+                         TextColor="Black"
+                         BorderWidth="2"
+                         Value="2"
+                         GroupName="opciones"
+                         HorizontalOptions="Start"
+                         Padding="10,5"
+                         CornerRadius="15"
+                         VerticalOptions="Center" />
+        </StackLayout>
 
         <!-- Botón para validar respuesta -->
-        <Button Text="Validar" 
-                FontAttributes="Bold" 
-                FontSize="16" 
-                BackgroundColor="LightBlue"
+        <Button Grid.Row="3"
+                Text="Validar"
+                FontAttributes="Bold"
+                FontSize="18"
+                BackgroundColor="#2980B9"
                 TextColor="White"
-                Clicked="OnValidateClicked"
+                CornerRadius="25"
+                HeightRequest="60"
+                WidthRequest="200"
                 HorizontalOptions="Center"
-                VerticalOptions="EndAndExpand" />
+                VerticalOptions="End"
+                Clicked="OnValidateClicked" />
 
-    </StackLayout>
+    </Grid>
 </ContentPage>

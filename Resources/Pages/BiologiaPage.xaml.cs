@@ -17,6 +17,7 @@ namespace MauiProyecto
 
         public BiologiaPage()
         {
+            ResultadosGlobales.InicializarMaterias();
             InitializeComponent();
             CargarPreguntas(); // Cargar preguntas al iniciar la página
         }
@@ -111,14 +112,14 @@ namespace MauiProyecto
                     double porcentajeErrores = (double)errores / totalPreguntas * 100;
 
                     // Guardar los resultados en ResultadosGlobales
-                    ResultadosGlobales.AgregarResultado("Biología", aciertos, errores);
+                    ResultadosGlobales.AgregarResultado("Biologia", aciertos, errores);
 
                     await DisplayAlert("Resultado", $"Aciertos: {aciertos}, Errores: {errores}\n" +
                                                     $"Porcentaje de Aciertos: {porcentajeAciertos:F2}%\n" +
                                                     $"Porcentaje de Errores: {porcentajeErrores:F2}%", "OK");
 
                     // Aquí puedes navegar a la siguiente página de materia, por ejemplo, la página de Química
-                    await Navigation.PushAsync(new CivicaPage());
+                    await Navigation.PushAsync(new ReviewPage());
                 }
             }
             else

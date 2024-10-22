@@ -111,14 +111,14 @@ namespace MauiProyecto
                     double porcentajeErrores = (double)errores / totalPreguntas * 100;
 
                     // Guardar los resultados en ResultadosGlobales
-                    ResultadosGlobales.AgregarResultado("Matemáticas", aciertos, errores);
+                    ResultadosGlobales.AgregarResultado("Matematicas", aciertos, errores);
 
                     await DisplayAlert("Resultado", $"Aciertos: {aciertos}, Errores: {errores}\n" +
                                                     $"Porcentaje de Aciertos: {porcentajeAciertos:F2}%\n" +
                                                     $"Porcentaje de Errores: {porcentajeErrores:F2}%", "OK");
 
                     // Aquí puedes navegar a la siguiente página de materia, por ejemplo, a la página de Biología
-                    await Navigation.PushAsync(new ReviewPage());
+                    await Navigation.PushAsync(new BiologiaPage());
                 }
             }
             else

@@ -110,7 +110,7 @@ namespace MauiProyecto
                     double porcentajeErrores = (double)errores / totalPreguntas * 100;
 
                     // Guardar los resultados en ResultadosGlobales
-                    ResultadosGlobales.AgregarResultado("Cívica", aciertos, errores);
+                    ResultadosGlobales.AgregarResultado("Civica", aciertos, errores);
 
                     await DisplayAlert("Resultado", $"Aciertos: {aciertos}, Errores: {errores}\n" +
                                                     $"Porcentaje de Aciertos: {porcentajeAciertos:F2}%\n" +

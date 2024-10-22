@@ -8,19 +8,38 @@ namespace MauiProyecto.Global
         // Diccionario para almacenar aciertos y errores por materia
         private static Dictionary<string, (int aciertos, int errores)> resultadosPorMateria = new Dictionary<string, (int aciertos, int errores)>();
 
+        // Método para inicializar el diccionario con todas las materias sin acentos
+        public static void InicializarMaterias()
+        {
+            var materias = new List<string>
+            {
+                "Espanol", "Matematicas", "Biologia", "Quimica",
+                "Fisica", "Historia", "Geografia", "Computacion",
+                "Logica", "Civica"
+            };
+
+            foreach (var materia in materias)
+            {
+                // Inicializamos con aciertos y errores en 0
+                if (!resultadosPorMateria.ContainsKey(materia))
+                {
+                    resultadosPorMateria[materia] = (0, 0);
+                }
+            }
+        }
+
         // Método para agregar resultados de una materia
         public static void AgregarResultado(string materia, int aciertos, int errores)
         {
-            // Verificamos si ya existe la materia en el diccionario
+            // Si la materia ya existe, sumamos los aciertos y errores a los ya existentes
             if (resultadosPorMateria.ContainsKey(materia))
             {
-                // Sumamos los aciertos y errores al valor existente
                 var resultadoActual = resultadosPorMateria[materia];
                 resultadosPorMateria[materia] = (resultadoActual.aciertos + aciertos, resultadoActual.errores + errores);
             }
             else
             {
-                // Si es la primera vez que se agrega la materia, simplemente la añadimos
+                // Si no existe, la agregamos con los aciertos y errores proporcionados
                 resultadosPorMateria[materia] = (aciertos, errores);
             }
         }
@@ -28,7 +47,6 @@ namespace MauiProyecto.Global
         // Obtener resultados globales sumando todos los aciertos y errores
         public static (int totalAciertos, int totalErrores) ObtenerResultadosGlobales()
         {
-            // Sumamos todos los aciertos y errores de cada materia
             int totalAciertos = resultadosPorMateria.Sum(r => r.Value.aciertos);
             int totalErrores = resultadosPorMateria.Sum(r => r.Value.errores);
             return (totalAciertos, totalErrores);
@@ -75,5 +93,20 @@ namespace MauiProyecto.Global
 
             return resultadosPorMateria.OrderBy(r => r.Value.errores).FirstOrDefault().Key;
         }
+
+        // Método para calcular la calificación final (porcentaje de aciertos globales)
+        public static double CalcularCalificacionFinal()
+        {
+            var (totalAciertos, totalErrores) = ObtenerResultadosGlobales();
+            int totalPreguntas = totalAciertos + totalErrores;
+
+            // Calcular porcentaje de aciertos
+            return totalPreguntas > 0 ? ((double)totalAciertos / totalPreguntas) * 100 : 0;
+        }
+
+        
+
+
+
     }
 }

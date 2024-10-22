@@ -14,49 +14,48 @@ namespace MauiProyecto
         public ReviewPage()
         {
             InitializeComponent();
-            CargarPreguntasYGenerarPestanas(); // Cargamos las preguntas y generamos las pestañas
-            CrearPestanaResultadoGlobal(); // Crear pestaña de Resultado Global
+
+            // Inicializar las materias en ResultadosGlobales antes de cargar las pestañas
+            ResultadosGlobales.InicializarMaterias();
+
+            // Cargamos las preguntas y generamos las pestañas por cada materia
+            CargarPreguntasYGenerarPestanas();
+
+            // Crear pestaña de Resultado Global
+            CrearPestanaResultadoGlobal();
         }
 
         // Método para cargar todas las preguntas desde los archivos .json y generar las pestañas
         private void CargarPreguntasYGenerarPestanas()
         {
-            // Lista de las materias y los archivos JSON correspondientes
             var materiasArchivos = new Dictionary<string, string>
             {
-                { "Español", "MauiProyecto.Resources.preguntas.preguntas_espanol.json" },
-                { "Matemáticas", "MauiProyecto.Resources.preguntas.preguntas_matematicas.json" },
-                { "Biología", "MauiProyecto.Resources.preguntas.preguntas_biologia.json" },
-                { "Química", "MauiProyecto.Resources.preguntas.preguntas_quimica.json" },
-                { "Física", "MauiProyecto.Resources.preguntas.preguntas_fisica.json" },
+                { "Espanol", "MauiProyecto.Resources.preguntas.preguntas_espanol.json" },
+                { "Matematicas", "MauiProyecto.Resources.preguntas.preguntas_matematicas.json" },
+                { "Biologia", "MauiProyecto.Resources.preguntas.preguntas_biologia.json" },
+                { "Quimica", "MauiProyecto.Resources.preguntas.preguntas_quimica.json" },
+                { "Fisica", "MauiProyecto.Resources.preguntas.preguntas_fisica.json" },
                 { "Historia", "MauiProyecto.Resources.preguntas.preguntas_historia.json" },
-                { "Geografía", "MauiProyecto.Resources.preguntas.preguntas_geografia.json" },
-                { "Computación", "MauiProyecto.Resources.preguntas.preguntas_computacion.json" },
-                { "Lógica", "MauiProyecto.Resources.preguntas.preguntas_logica.json" },
-                { "Cívica", "MauiProyecto.Resources.preguntas.preguntas_civica.json" }
+                { "Geografia", "MauiProyecto.Resources.preguntas.preguntas_geografia.json" },
+                { "Computacion", "MauiProyecto.Resources.preguntas.preguntas_computacion.json" },
+                { "Logica", "MauiProyecto.Resources.preguntas.preguntas_logica.json" },
+                { "Civica", "MauiProyecto.Resources.preguntas.preguntas_civica.json" }
             };
 
-            // Procesamos cada materia y archivo
             foreach (var materiaArchivo in materiasArchivos)
             {
                 string materia = materiaArchivo.Key;
                 string archivoJson = materiaArchivo.Value;
 
-                // Cargar preguntas desde el archivo JSON correspondiente
                 var preguntas = CargarPreguntasDesdeArchivo(archivoJson);
                 if (preguntas != null)
                 {
-                    // Validar respuestas reales y calcular los aciertos y errores (los datos deben venir del usuario)
-                    var (aciertos, errores) = ObtenerAciertosYErroresReales(materia);
-
-                    // Guardar los resultados de cada materia para cálculo global
-                    ResultadosGlobales.AgregarResultado(materia, aciertos, errores);
-
-                    // Crear una pestaña para la materia
+                    // Crear una pestaña para la materia y mostrar las preguntas, respuestas, aciertos y errores
                     var contentPage = new ContentPage
                     {
                         Title = materia,
-                        Content = CrearContenidoMateria(materia, preguntas, aciertos, errores)
+                        BackgroundColor = Color.FromArgb("#F0F4F8"),  // Color de fondo suave
+                        Content = CrearContenidoMateria(materia, preguntas)
                     };
 
                     this.Children.Add(contentPage);
@@ -100,27 +99,17 @@ namespace MauiProyecto
             return preguntasList;
         }
 
-        // Método para obtener los aciertos y errores reales de la materia
-        private (int aciertos, int errores) ObtenerAciertosYErroresReales(string materia)
-        {
-            // Aquí es donde deberías obtener los aciertos y errores reales del usuario
-            // Los datos deben venir de la lógica de validación de respuestas del cuestionario de la aplicación
-            int aciertos = ResultadosGlobales.ObtenerResultadosPorMateria()[materia].aciertos;
-            int errores = ResultadosGlobales.ObtenerResultadosPorMateria()[materia].errores;
-
-            return (aciertos, errores);
-        }
-
         // Método para crear el contenido de cada materia
-        private ScrollView CrearContenidoMateria(string materia, List<(string pregunta, string respuestaCorrecta)> preguntas, int aciertos, int errores)
+        private ScrollView CrearContenidoMateria(string materia, List<(string pregunta, string respuestaCorrecta)> preguntas)
         {
-            var stackLayout = new StackLayout { Padding = 20, Spacing = 10 };
+            var stackLayout = new StackLayout { Padding = 20, Spacing = 15 };
 
             stackLayout.Children.Add(new Label
             {
                 Text = $"Resultados de {materia}",
                 FontAttributes = FontAttributes.Bold,
-                FontSize = 20,
+                FontSize = 24,
+                TextColor = Color.FromArgb("#2C3E50"),  // Título color azul oscuro
                 HorizontalOptions = LayoutOptions.Center
             });
 
@@ -130,29 +119,34 @@ namespace MauiProyecto
                 stackLayout.Children.Add(new Label
                 {
                     Text = $"Pregunta {i + 1}: {preguntas[i].pregunta}",
-                    FontSize = 16
+                    FontSize = 18,
+                    TextColor = Colors.Black
                 });
 
                 stackLayout.Children.Add(new Label
                 {
                     Text = $"Respuesta Correcta: {preguntas[i].respuestaCorrecta}",
                     FontSize = 16,
-                    FontAttributes = FontAttributes.Italic
+                    FontAttributes = FontAttributes.Italic,
+                    TextColor = Color.FromArgb("#2980B9")  // Color de respuestas correcto
                 });
             }
+
+            // Obtener los aciertos y errores de la materia desde ResultadosGlobales
+            var (aciertos, errores) = ResultadosGlobales.ObtenerResultadosPorMateria()[materia];
 
             // Mostrar aciertos y errores
             stackLayout.Children.Add(new Label
             {
                 Text = $"Aciertos: {aciertos}",
-                FontSize = 16,
+                FontSize = 18,
                 TextColor = Colors.Green
             });
 
             stackLayout.Children.Add(new Label
             {
                 Text = $"Errores: {errores}",
-                FontSize = 16,
+                FontSize = 18,
                 TextColor = Colors.Red
             });
 
@@ -164,15 +158,15 @@ namespace MauiProyecto
             stackLayout.Children.Add(new Label
             {
                 Text = $"Porcentaje de Aciertos: {porcentajeAciertos:F2}%",
-                FontSize = 16,
-                TextColor = Colors.Blue
+                FontSize = 18,
+                TextColor = Color.FromArgb("#3498DB")  // Azul para porcentaje de aciertos
             });
 
             stackLayout.Children.Add(new Label
             {
                 Text = $"Porcentaje de Errores: {porcentajeErrores:F2}%",
-                FontSize = 16,
-                TextColor = Colors.Orange
+                FontSize = 18,
+                TextColor = Color.FromArgb("#E67E22")  // Naranja para porcentaje de errores
             });
 
             return new ScrollView { Content = stackLayout };
@@ -184,87 +178,96 @@ namespace MauiProyecto
             var (totalAciertos, totalErrores) = ResultadosGlobales.ObtenerResultadosGlobales();
             int totalPreguntasGlobal = totalAciertos + totalErrores;
 
-            // Calcular los porcentajes globales
             double porcentajeGlobalAciertos = totalPreguntasGlobal > 0 ? (double)totalAciertos / totalPreguntasGlobal * 100 : 0;
             double porcentajeGlobalErrores = totalPreguntasGlobal > 0 ? (double)totalErrores / totalPreguntasGlobal * 100 : 0;
 
-            // Obtener la materia con más/menos aciertos y errores
             var materiaMasAciertos = ResultadosGlobales.MateriaConMasAciertos();
             var materiaMasErrores = ResultadosGlobales.MateriaConMasErrores();
             var materiaMenosAciertos = ResultadosGlobales.MateriaConMenosAciertos();
             var materiaMenosErrores = ResultadosGlobales.MateriaConMenosErrores();
 
-            // Crear el contenido de la pestaña de resultado global
-            var stackLayout = new StackLayout { Padding = 20, Spacing = 10 };
+            double calificacionFinal = ResultadosGlobales.CalcularCalificacionFinal();
+
+            var stackLayout = new StackLayout { Padding = 20, Spacing = 15 };
 
             stackLayout.Children.Add(new Label
             {
                 Text = "Resumen Global",
                 FontAttributes = FontAttributes.Bold,
-                FontSize = 20,
+                FontSize = 24,
+                TextColor = Color.FromArgb("#2C3E50"),
                 HorizontalOptions = LayoutOptions.Center
             });
 
             stackLayout.Children.Add(new Label
             {
                 Text = $"Total de Aciertos: {totalAciertos}",
-                FontSize = 16,
+                FontSize = 18,
                 TextColor = Colors.Green
             });
 
             stackLayout.Children.Add(new Label
             {
                 Text = $"Total de Errores: {totalErrores}",
-                FontSize = 16,
+                FontSize = 18,
                 TextColor = Colors.Red
             });
 
             stackLayout.Children.Add(new Label
             {
                 Text = $"Porcentaje de Aciertos Global: {porcentajeGlobalAciertos:F2}%",
-                FontSize = 16,
-                TextColor = Colors.Blue
+                FontSize = 18,
+                TextColor = Color.FromArgb("#3498DB")
             });
 
             stackLayout.Children.Add(new Label
             {
                 Text = $"Porcentaje de Errores Global: {porcentajeGlobalErrores:F2}%",
-                FontSize = 16,
-                TextColor = Colors.Orange
+                FontSize = 18,
+                TextColor = Color.FromArgb("#E67E22")
             });
 
-            // Mostrar la materia con más/menos aciertos y errores
             stackLayout.Children.Add(new Label
             {
                 Text = $"Materia con más aciertos: {materiaMasAciertos}",
-                FontSize = 16,
+                FontSize = 18,
                 TextColor = Colors.Green
             });
 
             stackLayout.Children.Add(new Label
             {
                 Text = $"Materia con menos aciertos: {materiaMenosAciertos}",
-                FontSize = 16,
-                TextColor = Colors.Blue
+                FontSize = 18,
+                TextColor = Color.FromArgb("#3498DB")
             });
 
             stackLayout.Children.Add(new Label
             {
                 Text = $"Materia con más errores: {materiaMasErrores}",
-                FontSize = 16,
+                FontSize = 18,
                 TextColor = Colors.Red
             });
 
             stackLayout.Children.Add(new Label
             {
                 Text = $"Materia con menos errores: {materiaMenosErrores}",
-                FontSize = 16,
-                TextColor = Colors.Orange
+                FontSize = 18,
+                TextColor = Color.FromArgb("#E67E22")
+            });
+
+            stackLayout.Children.Add(new Label
+            {
+                Text = $"Calificación Final: {calificacionFinal:F2}%",
+                FontSize = 20,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Colors.Purple,
+                HorizontalOptions = LayoutOptions.Center
             });
 
             var resumenGlobalPage = new ContentPage
             {
                 Title = "Resultado Global",
+                BackgroundColor = Color.FromArgb("#F0F4F8"),
                 Content = new ScrollView { Content = stackLayout }
             };
 
@@ -272,4 +275,3 @@ namespace MauiProyecto
         }
     }
 }
-
