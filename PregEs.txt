@@ -1,0 +1,63 @@
+[
+  {
+    "pregunta": "¿Qué es un sustantivo?",
+    "opciones": [ "Una palabra que describe acciones", "Una palabra que nombra personas, animales, cosas o lugares", "Una palabra que une oraciones" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Cuál es la función de un adjetivo?",
+    "opciones": [ "Modificar un sustantivo", "Indicar una acción", "Unir oraciones" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué tipo de palabra es 'rápidamente'?",
+    "opciones": [ "Sustantivo", "Verbo", "Adverbio" ],
+    "respuesta_correcta": 2
+  },
+  {
+    "pregunta": "¿Cuál es el modo verbal que expresa acciones posibles o deseadas?",
+    "opciones": [ "Indicativo", "Subjuntivo", "Imperativo" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es un pronombre?",
+    "opciones": [ "Una palabra que reemplaza a un sustantivo", "Una palabra que describe un adjetivo", "Una palabra que une dos frases" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes es una forma correcta de usar el punto y coma?",
+    "opciones": [ "Al final de una oración completa", "Para separar elementos de una lista compleja", "Al principio de una oración" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué tipo de texto es una novela?",
+    "opciones": [ "Texto narrativo", "Texto expositivo", "Texto descriptivo" ],
+    "respuesta_correcta": 0
+  },
+  {
+    "pregunta": "¿Qué función tiene un verbo en una oración?",
+    "opciones": [ "Nombrar un objeto", "Indicar una acción o estado", "Describir un lugar" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es un sinónimo?",
+    "opciones": [ "Palabras que significan lo opuesto", "Palabras que tienen el mismo significado", "Palabras que no tienen relación" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué es una oración interrogativa?",
+    "opciones": [ "Una oración que expresa una acción", "Una oración que expresa una pregunta", "Una oración que une dos ideas" ],
+    "respuesta_correcta": 1
+  },
+  {
+    "pregunta": "¿Qué tipo de palabra es 'él'?",
+    "opciones": [ "Un sustantivo", "Un adjetivo", "Un pronombre" ],
+    "respuesta_correcta": 2
+  },
+  {
+    "pregunta": "¿Cuál es el propósito de un artículo en español?",
+    "opciones": [ "Modificar un adverbio", "Determinar el género y número de un sustantivo", "Indicar una acción" ],
+    "respuesta_correcta": 1
+  }
+]
+
